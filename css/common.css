@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+#wrap{}
+
+#header{width:100%; height:100px; background:rgba(255,255,255,0.3);
+            position:absolute; top:0; left:0; transition:all 0.2s;
+            box-shadow:0 2px 5px rgba(0,0,0,0.2); z-index:298;}
+#header:hover{background:#fff; border-bottom:1px solid #ebebeb;}
+#headerIn{width:980px; height:100px; margin:0 auto; position:relative;
+             border:none; transition:all 0.2s; z-index:300;}
+#headerIn:hover{border-bottom:1px solid #ebebeb;}
+.logo{padding-top:35px;}
+
+/*메인메뉴*/
+.gnb{position:absolute; top:0; right:0; overflow: hidden;}
+.gnb h2{display:none;}
+.gnb .d1{float:left; width:142.3px; text-align:center; position:relative;}
+
+/*메인메뉴글자*/
+.gnb .d1 .m{display:block; padding:41px 20px; font-size:17px; font-weight:800;}
+.gnb .d1:hover .m{color:#66bd2b;}
+.gnb .d1 span{display:block; width:142.3px; height:3px;
+                  background:#66bd2b;
+                  position:absolute; left:0; bottom:0;
+                  transform:scaleX(0); transition:all 0.3s;}
+.gnb .d1:hover span{transform:scaleX(1);}
+
+/*서브메뉴*/
+.gnb .d1 .d2{position:absolute; top:100px; left:0;
+                width:100%; height:288px;} 
+.gnb .d1 .d2 ul{height:100%; padding:28px 0;}
+.gnb .d1:hover .d2 ul{background:#f5f5f5;}
+.gnb .d1 .d2 ul li{margin-bottom:25px;}
+.gnb .d1 .d2 ul li a{color:#333; font-size:15px;}
+.gnb .d1 .d2 ul li a:hover{color:#66bd2b; font-weight:700;}
+
+/*gnb서브배경*/
+#header .subBg{width:100%; height:0; overflow:hidden; background:#fff; z-index:299;
+                     position:absolute; top:0; left:0; box-shadow:0 0 5px rgba(0,0,0,0.2);}
+
+/*푸터영역*/
+#footer{width:100%; height:380px;
+          background:rgba(0,31,51,0.9);}
+
+.fmenu{height:16px; padding:20px 0; background:#001f33;}
+.fmenu ul{width:980px; margin:0 auto;}
+.fmenu li{float:left; width:195.2px; text-align:center; 
+            line-height:15px; border-right:1px solid #17374d;}
+.fmenu li a{font-size:15px; color:#eee;}
+.fmenu li:last-child{border-right:none;}
+.fmenu li:nth-child(2) a{color:#ef7d19; font-weight:700;}
+
+#footerIn{width:980px; height:130px; margin:0 auto;}
+
+.finner{padding-top:60px; position:relative;}
+
+.flogo{margin-bottom:60px;}
+
+.fsns{position:absolute; top:67.5px; right:150px;}
+.fsns li{float:left; margin-right:6px;}
+.fsns li:last-child{margin-right:0;}
+.fsns li a{display:block; width:23px; height:23px; position:relative;}
+.fsns li a .on{position:absolute; top:-0.5px; left:-0.8px; display:none;}
+.fsns li a:hover .on{display:block;}
+
+.family{position:absolute; top:65.5px; right:0; background:#fff; border-radius:5px;}
+.family select{display: block; width:120px; height:26px; font-size:12px; color:#001f33;
+                 border:1px solid #fff; border-radius:5px; padding:0 5px;}
+
+.add{color:#eee; font-size:14px;}
+.add .add1{float:left; margin-right:100px;}
+.add .add2{float:left;}
+.add p span{display:block;}
+.add p .center{font-size:16px; font-weight:800; color:#eee; margin-bottom:15px;}
+.add p .fax{margin-top:25px;}
+
+.finfo{position:absolute; bottom:0; right:0; color:#666; font-size:13px;}
+.finfo .info{margin-bottom:10px;}
+.finfo .info span{display:block; float:left; border-right:1px solid #666; 
+                     line-height:11px; padding-right:8px; margin-right:8px;}
+.finfo .info span:last-child{border-right:none; padding-right:0; margin-right:0;}
+
+.copy{font-weight:700; color:#666;}
+
