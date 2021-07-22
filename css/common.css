@@ -60,7 +60,7 @@
 .fsns li{float:left; margin-right:6px;}
 .fsns li:last-child{margin-right:0;}
 .fsns li a{display:block; width:23px; height:23px; position:relative;}
-.fsns li a .on{position:absolute; top:-0.8px; left:-0.9px; display:none;}
+.fsns li a .on{position:absolute; top:-0.9px; left:-0.9px; display:none;}
 .fsns li a:hover .on{display:block;}
 
 .family{position:absolute; top:65.5px; right:0; background:#fff; border-radius:5px;}
