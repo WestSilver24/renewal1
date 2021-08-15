@@ -2,7 +2,8 @@
 <html lang="ko">
 <head>
     <meta charset="utf-8">
-    <title>GC녹십자아이메드_서브페이지</title>
+    <title>GC녹십자아이메드_조서은</title><!--서브페이지-->
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
     <link href="css/sub1.css" rel="stylesheet">
@@ -83,15 +84,31 @@
         <nav class="subGnb">
             <div class="inner">
                 <ul class="cf">
-                    <li><a href="index.html"><img src="img/sub1/ico_home.png" alt="홈"></a></li>
-                    <li><a href="sub1.html">
-                         <span>아이메드 소개</span>
-                         <img src="img/sub1/arrow.png" alt="목록">
-                    </a></li>
-                    <li><a href="sub1.html">
-                         <span>아이메드의 특별함</span>
-                         <img src="img/sub1/arrow.png" alt="목록">
-                    </a></li>
+                    <li class="d1"><a href="index.html"><img src="img/sub1/ico_home.png" alt="홈"></a></li>
+                    <li class="d1">
+                        <a href="sub1.html" class="m">아이메드 소개<i></i></a><!--.m-->
+                        <div class="d2">
+                            <ul>
+                                <li><a href="sub1.html">센터소개</a></li>
+                                <li><a href="sub1.html">검진/진료소개</a></li>
+                                <li><a href="sub1.html">예약/결과조회</a></li>
+                                <li><a href="sub1.html">고객센터</a></li>
+                            </ul>
+                        </div><!--.d2 메인메뉴-->
+                    </li><!--.d1 메뉴1-->
+                    <li class="d1">
+                        <a href="sub1.html" class="m">아이메드의 특별함<i></i>
+                        </a><!--.m-->
+                        <div class="d2">
+                            <ul>
+                                <li><a href="sub1.html">연혁</a></li>
+                                <li><a href="sub1.html">가족사 소개</a></li>
+                                <li><a href="sub1.html">의료진 소개</a></li>
+                                <li><a href="sub1.html">사회 공헌</a></li>
+                                <li><a href="sub1.html">의학컬럼</a></li>
+                            </ul>
+                        </div><!--.d2 서브메뉴-->
+                    </li><!--.d1 메뉴2-->
                 </ul>
             </div><!--.inner-->
         </nav><!--.subGnb-->
@@ -100,10 +117,10 @@
             <p>GC녹십자아이메드만의 특별함을 소개합니다</p>
         </div><!--.subMv-->
         <div class="contList">
-            <div class="inner">
+            <div class="inner tab">
                 <ul class="cf">
                     <li class="on"><a href="#">건강검진센터</a></li>
-                    <li><a href="#">통합진료센터</a><i></i></li>
+                    <li class="n"><a href="#">통합진료센터</a></li>
                     <li><a href="#">스마트건강시스템</a></li>
                 </ul>
             </div><!--.inner-->
@@ -269,6 +286,20 @@
         $(".subBg").stop().animate({
             height:0
         },500);
+    });
+    
+    $(".subGnb ul .d1").mouseenter(function(){
+        $(this).find(".d2").stop().slideDown();
+    });
+    $(".subGnb ul .d1").mouseleave(function(){
+        $(this).find(".d2").stop().slideUp();
+    });
+    
+    
+    $(".contList .inner.tab ul li").click(function(){
+        $(".contList .inner.tab ul li").removeClass("on");
+        $(this).addClass("on");
+        $(this).next("ul").addClass("on");
     });
 </script>
 </body>
