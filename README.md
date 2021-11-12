@@ -4,4 +4,6 @@
 기획/디자인/코딩 : 개인작업100%
 작업기간 : 15일
 
-https://westsilver24.github.io/renewal1/
+바로가기! ➡ https://westsilver24.github.io/renewal1/
+
+모바일버전 : https://westsilver24.github.io/renewal1_mobile/
